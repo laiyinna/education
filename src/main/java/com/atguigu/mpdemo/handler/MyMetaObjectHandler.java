@@ -21,6 +21,9 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         //参数1：属性名称；参数2：当前时间；参数3：元数据
         this.setFieldValByName("createTime",new Date(),metaObject);
         this.setFieldValByName("updateTime",new Date(),metaObject);
+        this.setFieldValByName("version",1,metaObject);
+        this.setFieldValByName("deleted", 0, metaObject);
+
     }
 
     @Override
